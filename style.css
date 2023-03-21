@@ -1,0 +1,171 @@
+:root {
+	background-color: #e9ecf0;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Merienda One', cursive;
+	background: transparent;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+.header {
+	padding: 20px 20px 0 20px;
+	font-family: 'Lobster';
+	box-shadow: 0 5px 2px -1px gray;
+	background-color: rgb(62, 178, 255);
+}
+
+.header h1 {
+	font-size: 4rem;
+	color: white;
+	letter-spacing: 5px
+}
+
+.main-wrapper {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 100%;
+}
+
+.content {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+.library-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.book-title{
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+.book-entry {
+	font-size: 1rem;
+}
+
+#add-book-btn {
+	cursor: pointer;
+	position: sticky;
+	bottom: 0px;
+	width: 5rem;
+	height: 5rem;
+	align-self: flex-end;
+	opacity: 0.8;
+}
+
+#add-book-btn:hover {
+	opacity: 1;
+}
+
+.book-container {
+	padding: 20px;
+	border-radius: 0px 20px 20px 0px;
+	box-shadow: 5px 5px #575757;
+	background-color: white;
+	min-width: 350px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	border: 0;
+	font-family: 'Gentium Book';
+}
+
+.delete-book {
+	align-self: flex-end;
+	height: 35px;
+	width: 25%;
+	border: none;
+	background-color: green;
+	color: white;
+	font-size: 1.2rem;
+	cursor: pointer;
+}
+
+.form-wrapper {
+	display: flex;
+	justify-content: center;
+	align-self: center;
+	position: fixed;
+	z-index: 1;
+	padding-top: 100px; /* Location of the box */
+ 	left: 0;
+ 	top: 0;
+ 	width: 100%; /* Full width */
+  	height: 100%; /* Full height */
+  	overflow: auto; /* Enable scroll if needed */
+  	background-color: rgb(0,0,0); /* Fallback color */
+  	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.form-container {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	align-items: center;
+	background-color: white;
+	padding: 30px;
+	min-width: 300px;
+	height: 500px;
+	font-family: 'Gentium Book';
+	border-radius: 50px;
+}
+
+.form-container label {
+	font-size: 1.5rem;
+	width: 100%;
+}
+
+.form-container legend {
+	font-size: 2rem;
+	margin-bottom: 10px;
+}
+
+.form-container input {
+	width: 100%;
+	height: 1.8rem;
+	border: none;
+	background-color: rgb(207, 206, 205);
+	border-radius: 20px;
+	padding-left: 15px;
+	outline: none;
+}
+
+.form-container button {
+	margin-top: 10px;
+	height: 35px;
+	width: 50%;
+	border: none;
+	background-color: green;
+	color: white;
+	font-size: 1.2rem;
+	cursor: pointer;
+	border-radius: 30px;
+}
+
+.hidden {
+	display: none;
+	visibility: hidden;
+}
+
+.footer {
+	position: absolute;
+	margin-top: 10px;
+    font-family: 'Tilt Neon', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+	align-self: center;
+}

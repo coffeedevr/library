@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Library</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?Gentium+Book+Basic&family=Merienda+One&family=Tilt+Neon&family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="main-wrapper">
+		<div class="header">
+			<h1>My Library</h1>
+		</div>
+		<div class="content">
+			<div class="library-container">
+			</div>
+			<svg id="add-book-btn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>plus-circle-outline</title><path d="M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M13,7H11V11H7V13H11V17H13V13H17V11H13V7Z" /></svg>
+		</div>
+		<div class="form-wrapper hidden">
+			<form action="" method="POST" class="form-container">
+				<legend>Add a New Book</legend>
+				<label form="title">1. What's the title of the book?</label>
+				<input type="textbox" id="title" name="title" placeholder="Enter title..." class="form-controls" autocomplete="off" required />
+				<label form="author">2. Who is the author of the book?</label>
+				<input type="textbox" id="author" name="author" class="form-controls" required />
+				<label form="pages">3. How many pages does the book have?</label>
+				<input type="number" id="pages" name="pages" class="form-controls" required />
+				<label form="userpages">4. At what page are you now?</label>
+				<input type="number" id="userpages" name="userpages" class="form-controls" required />
+				<button type="submit">Submit</button>
+
+				<button type="button">Close</button>
+			</form>
+		</div>
+		<div class="footer">
+			<p id="footertext"> coffeedevr |</p>
+			<a href="https://github.com/coffeedevr/admin-dashboard" target=”_blank”><img src="img/githublogo.png"
+				height="40px"></a>
+		</div>
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
