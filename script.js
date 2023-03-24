@@ -18,25 +18,44 @@ const date = new Date()
 const year = date.getFullYear()
 footertext.textContent = '© ' + year + footertext.textContent
 
-library.push(new Book(bookcounter, 'One Piece', 'Eiichiro Oda', '900', '1', date.getDate))
+// function Book (id, title, author, totalpages, userpages, dateadded) {
+//   this.id = id
+//   this.title = title
+//   this.author = author
+//   this.totalpages = totalpages
+//   this.userpages = userpages
+//   this.dateadded = dateadded
+// }
 
-function Book (id, title, author, totalpages, userpages, dateadded) {
-  this.id = id
-  this.title = title
-  this.author = author
-  this.totalpages = totalpages
-  this.userpages = userpages
-  this.dateadded = dateadded
-}
+// Book.prototype.completion = function () {
+//   // eslint-disable-next-line eqeqeq
+//   if (this.userpages == this.totalpages) {
+//     return 'Fishined.'
+//   } else {
+//     return 'Not finished yet.'
+//   }
+// }
 
-Book.prototype.completion = function () {
-  // eslint-disable-next-line eqeqeq
-  if (this.userpages == this.totalpages) {
-    return 'Fishined.'
-  } else {
-    return 'Not finished yet.'
+class Book {
+  constructor (id, title, author, totalpages, userpages, dateadded) {
+    this.id = id
+    this.title = title
+    this.author = author
+    this.totalpages = totalpages
+    this.userpages = userpages
+    this.dateadded = dateadded
+  }
+
+  completion () {
+    if (this.userpages === this.totalpages) {
+      return 'Fishined.'
+    } else {
+      return 'Not finished yet.'
+    }
   }
 }
+
+library.push(new Book(bookcounter, 'One Piece', 'Eiichiro Oda', '900', '1', date.getDate))
 
 function closeForm () {
   toggleForm()
